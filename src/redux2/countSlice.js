@@ -6,7 +6,7 @@ const initialState = {
 }
 
 const countSlide = createSlice({
-    name: 'count',
+    name: 'count', 
     initialState,
     reducers: {
         countUp(state) {
@@ -17,6 +17,13 @@ const countSlide = createSlice({
         }
     }
 })
+
+console.log(typeof initialState)
+console.log(initialState)
+console.log(createSlice)
+console.log(typeof countSlide)
+console.log(countSlide)
+console.log(typeof countSlide.reducer)
 
 export const { countUp, countDown } = countSlide.actions
 export default countSlide.reducer
